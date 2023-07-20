@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .canvas-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px; /* Add some spacing from the controls */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 800px;
+  }
+  #canvas {
+    display: grid;
+    max-width: 500px; /* Adjust the maximum width of the canvas */
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .grid-element {
+    width: 100%;
+    padding-bottom: 100%;
+    border: 1px solid #fff;
+  }
+  
+  .controls {
+    flex: 0 0 200px; /* Adjust the width of the controls */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #eee;
+    color: #000;
+    border: none;
+  }
+  
+  .controls button.active {
+    background-color: #000;
+    color: #fff;
+  }
